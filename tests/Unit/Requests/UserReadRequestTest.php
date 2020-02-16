@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Gate;
 use Mockery;
 use Tests\TestCase;
 
-class UserEditRequestTest extends TestCase
+class UserReadRequestTest extends TestCase
 {
     /**
      * === IMPORTANT ===

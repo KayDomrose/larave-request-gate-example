@@ -7,7 +7,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Gate;
 use Tests\TestCase;
 
-class GateTest extends TestCase
+//use PHPUnit\Framework\TestCase;
+
+class UserGateTest extends TestCase
 {
     use RefreshDatabase;
 
