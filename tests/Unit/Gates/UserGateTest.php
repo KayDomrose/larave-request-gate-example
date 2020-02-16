@@ -43,4 +43,14 @@ class UserGateTest extends TestCase
 
         $this->assertFalse($result);
     }
+
+    public function test_dont_allow_reading_user_for_guest()
+    {
+        $currentUser = null;
+        $targetUser = factory(User::class)->create();
+
+        $result = Gate::forUser($currentUser)->allows('user.read', $targetUser);
+
+        $this->assertFalse($result);
+    }
 }
